@@ -17,28 +17,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED"/>
                 <action android:name="android.intent.action.PACKAGE_REMOVED"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:scheme="package" />
-                <!-- android.intent.extra.REPLACING -->
-            </intent-filter>
-        </activity>
+            </intent-filter>-->
 
-        <!--
-        <activity android:name="ShareActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.SEND"/>
+            <!--<intent-filter>
+                <action android:name="com.hyruu.applicationwatcher.PACKAGE_ADDED"/>
+                <action android:name="com.hyruu.applicationwatcher.PACKAGE_REMOVED"/>
                 <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="text/plain"/>
-            </intent-filter>
+            </intent-filter>-->
         </activity>
-
-        ACTION_PACKAGE_ADDED / android.intent.action.PACKAGE_ADDED
-        ACTION_PACKAGE_REMOVED / android.intent.action.PACKAGE_REMOVED
-        ACTION_PACKAGE_REPLACED / android.intent.action.PACKAGE_REPLACED
-        -->
 
         <service
             android:name=".AppListener"
